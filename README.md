@@ -1,4 +1,8 @@
+## Run the Demo in Google Colab
 
+Open the notebook directly in Colab:
+
+https://colab.research.google.com/gist/thunderish48-pixel/verify
 # Demo Verify Engine
 
 Lightweight verification pipeline that produces a certificate ID and anchors a verification reference on Hedera Testnet.
