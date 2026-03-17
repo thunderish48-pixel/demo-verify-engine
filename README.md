@@ -1,4 +1,4 @@
-## Run the Demo in Google Colab
+
 
 Open the notebook directly in Colab:
 
