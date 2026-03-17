@@ -31,7 +31,7 @@ Unlike complex enterprise "bloatware," Verify is a focused, zero-external-infras
 * Infrastructure: Minimal. No heavy databases or proprietary middle-layers required.
 
 ------------------------------
-🚀 Why This Wins (Hackathon Judging Criteria)
+🚀 
 
 | Criteria | How Verify Delivers |
 |---|---|
