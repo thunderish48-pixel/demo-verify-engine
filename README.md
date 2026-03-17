@@ -1,5 +1,4 @@
-This README is designed to hit the specific high-notes judges look for: immediate technical proof, architectural efficiency, and clear value.
-In a hackathon, judges often spend less than 3 minutes on a README. This layout uses "signals" (bolding, icons, and clear headers) to prove the system works before they even clone the repo.
+
 ------------------------------
 Verify 🛡️
 A Lightweight, Deterministic Event Integrity Layer on Hedera.
