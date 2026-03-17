@@ -1,6 +1,6 @@
 
 
-Open the notebook directly in Colab:
+
 
 
 # Demo Verify Engine
