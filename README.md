@@ -1,66 +1,60 @@
+## Verify 🛡️  
+A deterministic event integrity layer on Hedera
 
-------------------------------
-Verify 🛡️
-A Lightweight, Deterministic Event Integrity Layer on Hedera.
-Verify is a high-performance validation engine that bridges the gap between local data execution and public consensus. Built as a unified execution pipeline, it provides real-time, tamper-proof anchoring for any digital event using the Hedera Consensus Service (HCS).
-------------------------------
-⚡ The Problem: The "Trust Gap"
-Most enterprise systems rely on internal database logs that are mutable and siloed. Traditional audit trails are retrospective, leaving a window of "uncertainty" between an event's occurrence and its verification.
-💎 The Solution: Real-Time Determinism
-Verify eliminates the trust gap by creating a deterministic loop:
+Verify is a lightweight validation engine that connects local execution to public consensus. It provides real-time, tamper-evident anchoring for digital events using the Hedera Consensus Service (HCS).
 
-   1. Capture: Generates a unique SHA-256 fingerprint of any data event.
-   2. Anchor: Submits the hash directly to the Hedera mainnet/testnet.
-   3. Listen: A live, isolated mirror-node listener captures the on-chain consensus.
-   4. Match: Performs a real-time round-trip validation (Submit → Receive → Match).
-   5. Confirm: Immediate confirmation of integrity with zero batch delay.
+---
 
-------------------------------
-🛠️ Technical Architecture & Execution
-Unlike complex enterprise "bloatware," Verify is a focused, zero-external-infrastructure pipeline.
+## Problem: The Trust Gap  
+Most systems rely on internal logs that are mutable and retrospectively audited. This creates a gap between when an event occurs and when it can be independently verified.
 
-* Core Logic: Unified submission and verification flow.
-* Ledger: Direct integration with Hedera Consensus Service (HCS) for <3s finality.
-* Security: SHA-256 hashing ensures data privacy (only the proof is on-chain).
-* Stability: Runtime isolation prevents listener lag and ensures consistent 1:1 validation matching.
+---
 
-📊 Performance Validated
+## Solution: Deterministic Verification Loop  
 
-* Latency: Real-time (no batching delays).
-* Accuracy: 100% match rate in validated test runs.
-* Infrastructure: Minimal. No heavy databases or proprietary middle-layers required.
+1. Capture — Generate a SHA-256 fingerprint of the event  
+2. Anchor — Submit the hash to Hedera (HCS)  
+3. Listen — Mirror node captures consensus message  
+4. Match — Validate round-trip integrity (submit vs receive)  
+5. Confirm — Immediate verification of event integrity  
 
-------------------------------
-🚀 
+---
 
-| Criteria | How Verify Delivers |
+## Architecture  
+
+- Unified submission and verification pipeline  
+- Direct integration with Hedera Consensus Service  
+- SHA-256 hashing (no raw data leaves the system)  
+- Isolated listener for stable validation  
+- No external database required  
+
+---
+
+## Performance  
+
+- Consistent 1:1 submit → receive → match  
+- Near real-time confirmation (network-dependent)  
+- Stable across repeated runs  
+
+---
+
+## Evaluation Alignment  
+
+| Criteria | Delivery |
 |---|---|
-| Execution (20%) | Fully working, end-to-end pipeline. No "mocked" data; everything is live on-chain. |
-| Technical Value (30%) | Solves the "Last Mile" of trust. Provides an immutable audit trail for AI, Supply Chain, or Finance. |
-| Feasibility (20%) | Lightweight and modular. Can be dropped into any existing stack as a "Trust-as-a-Service" layer. |
-| Novelty (10%) | Focuses on deterministic loops rather than just "storing data on a blockchain." |
+| Execution | Working end-to-end pipeline with live consensus |
+| Technical Value | Verifiable integrity layer for external systems |
+| Feasibility | Lightweight and easy to integrate |
+| Novelty | Deterministic validation loop vs passive storage |
 
-------------------------------
-🛠️ Quick Start
+---
 
-# Clone the repository
-git clone https://github.com
-# Set up your Hedera credentials in .env
-OPERATOR_ID=0.0.xxxx
-OPERATOR_KEY=302e...
-# Run the validation loop
-npm install
-npm run start:verify
+## Use Cases  
 
-------------------------------
-🎯 Use Cases
+- AI data provenance  
+- Supply chain event validation  
+- Audit and legal timestamping  
 
-* AI Data Provenance: Ensure training data hasn't been tampered with.
-* Supply Chain: Instant proof of custody at every checkpoint.
-* Legal/Audit: Real-time, third-party verifiable timestamps for digital documents.
+---
 
-------------------------------
-Built with precision.
-------------------------------
-Should we add a "System Flow Diagram" section or a "Live Demo Video" link to the top to grab their attention even faster?
-
+Built for real-time verification
