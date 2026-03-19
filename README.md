@@ -1,5 +1,4 @@
-## Live Demo
-https://colab.research.google.com/github/thunderish48-pixel/demo-verify-engine/blob/main/verify.ipynb
+
 # VERIFY — Deterministic Event Integrity on Hedera
 
 ## Overview
