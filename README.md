@@ -102,10 +102,6 @@ VERIFY acts as a **middleware integrity layer**:
 
 ---
 
-## Demo
-
-Project Demo Video:
-[PASTE YOUR YOUTUBE LINK HERE]
 
 ---
 
