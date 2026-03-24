@@ -1,5 +1,4 @@
-## Run in Colab (no setup required)
-https://colab.research.google.com/drive/...
+
 # VERIFY — Deterministic Event Integrity on Hedera
 
 ## Overview
